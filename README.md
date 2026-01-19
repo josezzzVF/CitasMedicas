@@ -1,4 +1,4 @@
-🌱 *Sistema de Diagnóstico de Enfermedades en Hojas de Caña de Azúcar*
+🌱 Sistema de Diagnóstico de Enfermedades en Hojas de Caña de Azúcar
 <p align="center"> <em>Aplicación basada en Deep Learning para la detección automática de enfermedades en hojas de caña de azúcar</em> </p>
 📌 Descripción general
 
