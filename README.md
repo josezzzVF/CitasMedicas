@@ -1,4 +1,4 @@
-🏥 Sistema de Citas Médicas Automatizado con n8n
+🏥 **Sistema de Citas Médicas Automatizado**
 
 🧩 1. Introducción
 
