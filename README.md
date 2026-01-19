@@ -32,11 +32,13 @@ Navegador web actualizado
 Base de datos (MySQL, PostgreSQL o similar)
 
 📂 4. Componentes del sistema
+
 Componente	Descripción
 n8n	Plataforma de automatización de flujos
 Base de datos	Almacena pacientes, médicos y citas
 Formularios	Captura de datos de pacientes
 Notificaciones	Envío automático de recordatorios
+
 🔄 5. Flujo general del sistema
 
 El paciente registra sus datos
@@ -50,6 +52,7 @@ Se almacena la información en la base de datos
 Se envía notificación automática al paciente
 
 🗓️ 6. Funcionalidades del sistema
+
 Módulo	Función	Beneficio
 Registro de pacientes	Captura datos personales	Organización de información
 Programación de citas	Agenda fecha y hora	Mejor control del tiempo
@@ -57,7 +60,9 @@ Consulta de citas	Visualiza citas registradas	Seguimiento eficiente
 Reprogramación	Cambia fecha u hora	Flexibilidad para el usuario
 Cancelación	Anula citas existentes	Optimización de agenda
 Notificaciones	Envía alertas automáticas	Reduce ausencias
+
 🖥️ 7. Uso del sistema
+
 7.1 Acceso
 
 Ingrese a la plataforma n8n
