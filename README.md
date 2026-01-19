@@ -1,120 +1,107 @@
-🌱 Sistema de Diagnóstico de Enfermedades en Hojas de Caña de Azúcar
-<p align="center"> <em>Aplicación basada en Deep Learning para la detección automática de enfermedades en hojas de caña de azúcar</em> </p>
-📌 Descripción general
+🏥 Sistema de Citas Médicas Automatizado con n8n
 
-Este sistema permite identificar enfermedades en hojas de caña de azúcar a partir de imágenes RGB, utilizando Redes Neuronales Convolucionales (CNN) entrenadas previamente.
-Está orientado a fines académicos, investigativos y de apoyo agrícola.
+🧩 1. Introducción
 
-🎯 Objetivo del sistema
+El Sistema de Citas Médicas Automatizado con n8n permite gestionar de forma eficiente el registro de pacientes, la programación de citas y las notificaciones automáticas, mediante flujos de trabajo (workflows) creados en la plataforma n8n.
 
-Detectar automáticamente enfermedades en hojas de caña de azúcar
+Este sistema está orientado a centros de salud, consultorios médicos y proyectos académicos, con el objetivo de optimizar el proceso de asignación de citas y reducir errores administrativos.
 
-Reducir el tiempo de diagnóstico manual
+🎯 2. Objetivo del sistema
 
-Apoyar la toma de decisiones en el sector agrícola
+Automatizar la gestión de citas médicas
 
-Brindar una herramienta sencilla e intuitiva al usuario
+Reducir tiempos de atención y errores manuales
 
-🧰 Requisitos del sistema
-🔹 Hardware
+Facilitar la comunicación entre pacientes y el sistema
 
-Computadora con 8 GB de RAM mínimo (recomendado 16 GB)
+Centralizar la información de citas
 
-Conexión a internet
+🧰 3. Requisitos del sistema
+💻 Hardware
 
-🔹 Software
+Computadora con mínimo 4 GB de RAM
 
-Python 3.9 o superior
+Conexión estable a internet
 
-Google Colab o entorno local
+🧪 Software
+
+n8n (local o cloud)
 
 Navegador web actualizado
 
-🔹 Librerías principales
+Base de datos (MySQL, PostgreSQL o similar)
 
-TensorFlow / Keras
+📂 4. Componentes del sistema
+Componente	Descripción
+n8n	Plataforma de automatización de flujos
+Base de datos	Almacena pacientes, médicos y citas
+Formularios	Captura de datos de pacientes
+Notificaciones	Envío automático de recordatorios
+🔄 5. Flujo general del sistema
 
-NumPy
+El paciente registra sus datos
 
-OpenCV
+El sistema valida la información
 
-Scikit-learn
+Se agenda la cita médica
 
-Matplotlib
+Se almacena la información en la base de datos
 
-Streamlit
+Se envía notificación automática al paciente
 
-📂 Estructura del proyecto
-📁 dataset/        → Imágenes organizadas por clase
-📁 models/         → Modelos entrenados (.keras / .h5)
-📁 notebooks/      → Entrenamiento y evaluación
-📁 utils/          → Funciones auxiliares
-📄 app_sugarcane.py → Aplicación Streamlit
-📄 README.md       → Guía de usuario
+🗓️ 6. Funcionalidades del sistema
+Módulo	Función	Beneficio
+Registro de pacientes	Captura datos personales	Organización de información
+Programación de citas	Agenda fecha y hora	Mejor control del tiempo
+Consulta de citas	Visualiza citas registradas	Seguimiento eficiente
+Reprogramación	Cambia fecha u hora	Flexibilidad para el usuario
+Cancelación	Anula citas existentes	Optimización de agenda
+Notificaciones	Envía alertas automáticas	Reduce ausencias
+🖥️ 7. Uso del sistema
+7.1 Acceso
 
-🚀 Guía de uso rápido
-1️⃣ Abrir el proyecto
+Ingrese a la plataforma n8n
 
-Accede al notebook desde Google Colab
+Abra el workflow del sistema de citas médicas
 
-Monta Google Drive si el dataset o modelos están allí
+7.2 Registro de una cita
 
-2️⃣ Cargar el modelo
+Complete el formulario de datos del paciente
 
-Ejecuta la celda de carga del modelo entrenado
+Seleccione fecha y hora disponible
 
-Modelos disponibles:
+Confirme el registro
 
-CNN personalizada
+7.3 Confirmación
 
-DenseNet121
+El sistema enviará un mensaje de confirmación automática
 
-ResNet50
+📊 8. Interpretación de resultados
 
-3️⃣ Ejecutar la aplicación Streamlit
-streamlit run app_sugarcane.py
+Cita registrada: Confirmación exitosa
 
-🖼️ Uso de la aplicación
+Cita reprogramada: Cambio realizado correctamente
 
-Cargar una imagen (.jpg o .png) de la hoja
+Cita cancelada: Espacio liberado en la agenda
 
-Visualizar la imagen en pantalla
+✅ 9. Buenas prácticas
 
-Presionar Diagnosticar
+Verificar datos antes de registrar la cita
 
-Obtener:
+Mantener actualizados los workflows
 
-Enfermedad detectada
+Realizar respaldos de la base de datos
 
-Nivel de confianza del modelo
+⚠️ 10. Limitaciones
 
-📊 Interpretación de resultados
+Dependencia de conexión a internet
 
-Clase predicha → Enfermedad identificada
+Requiere configuración previa de n8n
 
-Probabilidad (%) → Confianza del modelo
+No reemplaza sistemas clínicos especializados
 
-Resultados con baja confianza deben revisarse manualmente
+👨‍💻 11. Créditos
 
-✅ Buenas prácticas
-
-✔ Usar imágenes claras y bien iluminadas
-✔ Evitar sombras o fondos complejos
-✔ Capturar hojas completas
-✔ Mantener una distancia adecuada
-
-⚠️ Limitaciones
-
-El sistema solo reconoce enfermedades entrenadas
-
-No reemplaza la evaluación de un especialista
-
-La precisión depende de la calidad del dataset
-
-🔄 Mantenimiento y mejoras
-
-Reentrenar el modelo al añadir nuevas clases
-
-Actualizar librerías periódicamente
+Sistema desarrollado con fines académicos y demostrativos, utilizando n8n como herramienta de automatización.
 
 Evaluar con nuevos conjuntos de datos
